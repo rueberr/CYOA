@@ -1,4 +1,5 @@
 #CYOA.py
+#By: Chris Renslow, Ryan Rueber, and Stetson Jones
 
 import random
 from tkinter import *
