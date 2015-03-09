@@ -65,18 +65,31 @@ def choice2():
         choice2()
         
 ################ Stetson Jones Functions #####################
-def choice2():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+def choice3():
+    choice = simpledialog.askinteger("You have chosen HOUSTON", 
+                                     "HOUSTON is the brains of the operation.",
+                                     "The entire heist rides on you.",
+                                     "Now for your first choice.",
+                                     "Turn the cameras off and lose some of the money,",
+                                     "Or let the feds watch as you take the money.",
+                                     "Type 1 to turn off cameras, or 2 to let them watch")
+    
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("HOUSTON",
+                            "You take control of the cameras.",
+                            "you are now the only one able to see what goes on inside.")
+        choice31()
+                            
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("HOUSTON",
+                            "Your choice may prove unwise but all you can think of is money.")
+        choice32()
     else:
         choice2()
+
+def choice31():
+    choice = simpledialog.askinterger("
 
 ################ Main #####################
 intro()
