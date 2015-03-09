@@ -51,16 +51,21 @@ def choice1():
         choice1()
 
 ################ Chris Renslow Functions #####################
+                                             
+
+
+
 def choice2():
-    choice = simpledialog.askinteger("Choose wisely",
-                                     "This is the next part of the story.  Now you must choose 1 or 2 again.")
+    choice = simpledialog.askinteger("CARMINE",
+                                     "You chose the leader of the team, Carmine. He will command and make all the major choices in the heist."+ \
+                                     "Will you go in stealthily or go in the front door? 1 for stealth 2 for guns blazing. ")
     if (choice == 1):
-        messagebox.showinfo("The End",
-                            "You chose right.  THE END")
+        messagebox.showinfo("Stealth",
+                            "You decide to go in stealthy.")
 
     elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
+        messagebox.showinfo("Loud",
+                            "You decide to go in the front door.")
     else:
         choice2()
         
