@@ -66,14 +66,19 @@ def choice3():
     if (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "You take control of the cameras.",
-                            "you are now the only one able to see what goes on inside.",
+                            "you are now the only one able to see what goes on inside.")
+        choice31()
                             
 
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             "Your choice may prove unwise but all you can think of is money.")
+        choice32()
     else:
         choice2()
+
+def choice31():
+    choice = simpledialog.askinterger("
 
 ################ Main #####################
 intro()
