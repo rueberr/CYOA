@@ -28,7 +28,7 @@ def intro():
     elif choice == "carmine":
         choice3()
     else:
-        intro()
+        choice3()
 
 ################ Ryan Rueber Functions #####################
 def choice1():
@@ -103,16 +103,16 @@ def choice2():
 ################ Stetson Jones Functions #####################
 def choice3():
     choice = simpledialog.askinteger("You have chosen HOUSTON", 
-                                     "HOUSTON is the brains of the operation.",
-                                     "The entire heist rides on you.",
-                                     "Now for your first choice.",
-                                     "Turn the cameras off and lose some of the money,",
-                                     "Or let the feds watch as you take the money.",
+                                     "HOUSTON is the brains of the operation."
+                                     "The entire heist rides on you."
+                                     "Now for your first choice."
+                                     "Turn the cameras off and lose some of the money,"
+                                     "Or let the feds watch as you take the money."
                                      "Type 1 to turn off cameras, or 2 to let them watch")
     
     if (choice == 1):
         messagebox.showinfo("HOUSTON",
-                            "You take control of the cameras.",
+                            "You take control of the cameras."+ \
                             "you are now the only one able to see what goes on inside.")
         choice31()
                             
@@ -125,7 +125,19 @@ def choice3():
         choice2()
 
 def choice31():
+<<<<<<< HEAD
     choice = simpledialog.askinterger("")
+=======
+    choice = simpledialog.askinterger("HOUSTON",
+                                      "You turn off the cameras. It was easy... too easy..."+ \
+                                      "but now you are faced with a choice. stay in the saftey of the van"+ \
+                                      "or risk it and go inside with the team and make sure they get the job done right."+ \
+                                      "type 1 to stay, or 2 to go.")
+    if (choice == 1):
+        messagebox.showinfo("HOUSTON",
+                            "You're a bit wimpy, but then again you always have been"+ \
+                            "no ammount of therapy could erase the bullying")
+>>>>>>> bc7c066ec5b300a27bcc97ace8258cb31220f3e5
 
 ################ Main #####################
 intro()
