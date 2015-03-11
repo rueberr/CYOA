@@ -42,7 +42,7 @@ def choice1():
         def ko():
             choice = simpledialog.askinteger("Choose wisely",
                                              "You have elected to knock out the guards. " + \
-                                             "would you like to 
+                                             "would you like to")
 
     elif (choice == 2):
         messagebox.showinfo("The End",
@@ -51,17 +51,48 @@ def choice1():
         choice1()
 
 ################ Chris Renslow Functions #####################
+def choice11():
+    simpldialog.askinteger("Roof or Basement" ,"You can either go in on the roof of the bank or underground through the basement." + \
+                          "1 for roof 2 for basement")
+    if (choice == 1):
+        messagebox.showinfo("Roof",
+                            "You go in on the roof and down into the bank")
+    elif (choice == 2):
+        messagebox.showinfo("Basement",
+                            "You go underground and through the basement quietly and enter the bank")
+    
+    
+    else:
+        choice11()                                          
+
+def choice12():
+    simpledialog.askinteger("Front Door" , "You go in guns blazing through the front door and make your way to the bank." + \
+                            "Will you drill the Vault or blast the Vault open with explosives? 1 for Drill 2 for blast")
+    if (choice == 1):
+        messagebox.showinfo("Drill",
+                            "You try and drill the vault but the drill you brought was to weak for the Vault." + \
+                            "You take too long, the cops come and see the dead bodies and kill the team. HEIST FAILED")
+        intro()
                                              
 
-
+    elif (choice == 2):
+        messagebox.showinfo("Blast",
+                            "You blast the Vault. You use to much explosives and Ivan is blown away and killed.
+                            "Without all of your team you cannot continue" + \
+                            "HEIST FAILED")
+        intro()
+        
+    else:
+        choice12()
 
 def choice2():
     choice = simpledialog.askinteger("CARMINE",
                                      "You chose the leader of the team, Carmine. He will command and make all the major choices in the heist."+ \
-                                     "Will you go in stealthily or go in the front door? 1 for stealth 2 for guns blazing. ")
+                                     "Will you go in stealthily or go in the front door to begin the heist? 1 for stealth 2 for guns blazing. ")
     if (choice == 1):
         messagebox.showinfo("Stealth",
                             "You decide to go in stealthy.")
+        choice11()                                     
 
     elif (choice == 2):
         messagebox.showinfo("Loud",
@@ -94,7 +125,7 @@ def choice3():
         choice2()
 
 def choice31():
-    choice = simpledialog.askinterger("
+    choice = simpledialog.askinterger("")
 
 ################ Main #####################
 intro()
