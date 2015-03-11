@@ -23,9 +23,9 @@ def intro():
     choice = choice.lower()
     if choice == "ivan":
         choice1()
-    elif choice == "houstan":
-        choice2()
     elif choice == "carmine":
+        choice2()
+    elif choice == "houston":
         choice3()
     else:
         choice3()
@@ -52,12 +52,12 @@ def choice1():
 
 ################ Chris Renslow Functions #####################
 def choice11():
-    simpldialog.askinteger("Roof or Basement" ,"You can either go in on the roof of the bank or underground through the basement." + \
+    choice11 = simpledialog.askinteger("Roof or Basement" ,"You can either go in on the roof of the bank or underground through the basement." + \
                           "1 for roof 2 for basement")
-    if (choice == 1):
+    if (choice11 == 1):
         messagebox.showinfo("Roof",
                             "You go in on the roof and down into the bank")
-    elif (choice == 2):
+    elif (choice11 == 2):
         messagebox.showinfo("Basement",
                             "You go underground and through the basement quietly and enter the bank")
     
@@ -66,18 +66,18 @@ def choice11():
         choice11()                                          
 
 def choice12():
-    simpledialog.askinteger("Front Door" , "You go in guns blazing through the front door and make your way to the bank." + \
+    choice12 = simpledialog.askinteger("Front Door" , "You go in guns blazing through the front door and make your way to the bank." + \
                             "Will you drill the Vault or blast the Vault open with explosives? 1 for Drill 2 for blast")
-    if (choice == 1):
+    if (choice12 == 1):
         messagebox.showinfo("Drill",
                             "You try and drill the vault but the drill you brought was to weak for the Vault." + \
                             "You take too long, the cops come and see the dead bodies and kill the team. HEIST FAILED")
         intro()
                                              
 
-    elif (choice == 2):
+    elif (choice12 == 2):
         messagebox.showinfo("Blast",
-                            "You blast the Vault. You use to much explosives and Ivan is blown away and killed.
+                            "You blast the Vault. You use to much explosives and Ivan is blown away and killed." + \
                             "Without all of your team you cannot continue" + \
                             "HEIST FAILED")
         intro()
@@ -86,17 +86,18 @@ def choice12():
         choice12()
 
 def choice2():
-    choice = simpledialog.askinteger("CARMINE",
+    choice2 = simpledialog.askinteger("CARMINE",
                                      "You chose the leader of the team, Carmine. He will command and make all the major choices in the heist."+ \
                                      "Will you go in stealthily or go in the front door to begin the heist? 1 for stealth 2 for guns blazing. ")
-    if (choice == 1):
+    if (choice2 == 1):
         messagebox.showinfo("Stealth",
                             "You decide to go in stealthy.")
         choice11()                                     
 
-    elif (choice == 2):
+    elif (choice2 == 2):
         messagebox.showinfo("Loud",
                             "You decide to go in the front door.")
+        choice12()
     else:
         choice2()
         
@@ -125,9 +126,9 @@ def choice3():
         choice2()
 
 def choice31():
-<<<<<<< HEAD
+
     choice = simpledialog.askinterger("")
-=======
+
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -137,7 +138,7 @@ def choice31():
         messagebox.showinfo("HOUSTON",
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
->>>>>>> bc7c066ec5b300a27bcc97ace8258cb31220f3e5
+
 
 ################ Main #####################
 intro()
