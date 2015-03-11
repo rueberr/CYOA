@@ -14,12 +14,12 @@ w.pack()
 
 def intro():
     """ Introductory Function -> starts the story going """
-    messagebox.showinfo("Title", "\nHello, you have the option of being one " + \
+    messagebox.showinfo("THE HEIST", "\nHello, you have the option of being one " + \
                         "of three characters as you pull off a heist. You can " + \
                         "be Carmine (the leader), " + \
-                        "Ivan (the muscle), or Houstan (the brains).")
+                        "Ivan (the muscle), or Houston (the brains).")
     choice = simpledialog.askstring("Choose wisely",
-                                   "Type 'Ivan', 'Houstan', or 'Carmine'.")
+                                   "Type 'Ivan', 'Houston', or 'Carmine'.")
     choice = choice.lower()
     if choice == "ivan":
         choice1()
@@ -179,6 +179,11 @@ def choice31():
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
 
+    if (choice === 2):
+        messagebox.showinfo("HOUSTON",
+                            "Youre taking the brave way, this may gain you respect"
+                            "with your team, but this is scary stuff..."
+                            "and you forgot your inhaler")
 
 ################ Main #####################
 intro()
