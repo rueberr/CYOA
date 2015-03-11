@@ -51,22 +51,62 @@ def choice1():
         choice1()
 
 ################ Chris Renslow Functions #####################
+def choice14():
+    choice14 = simpledialog.askinteger( "Roof" ,"Kill the guards or try and sneak past them to the vault on the roof? 1 for kill 2 for sneak")
+
+    if (choice14 == 1):
+        messagebox.showinfo("Kill",
+                            "You kill the guards but Ivan gets shot, enters rage mode and pushes several guards off a balcony." + \
+                            "This alerts the guards and they kill the team. HEIST FAILED")
+        intro()
+        
+
+    elif (choice14 == 2):
+        messagebox.showinfo("Sneak",
+                            "You try and sneak past the roof guards and the guards in the bank spot you through the skylights."+ \
+                             "They alert the police. HEIST FAILED")
+        intro()
+    
+    
+    else:
+        choice14()             
+
+        
+def choice13():
+    choice13 = simpledialog.askinteger( "Basement" ,"Kill the guards or try and sneak past them to the vault in the basement? 1 for kill 2 for sneak")
+
+    if (choice13 == 1):
+        messagebox.showinfo("Kill",
+                            "You try to quietly kill the guards but the others hear you, and ambush you as you come out of the basement. HEIST FAILED")
+        intro()
+    elif (choice13 == 2):
+        messagebox.showinfo("Sneak",
+                            "You easily sneak past the dimwitted guards and head to the Vault")
+    
+    
+    else:
+        choice13()             
+
+
+
 def choice11():
     choice11 = simpledialog.askinteger("Roof or Basement" ,"You can either go in on the roof of the bank or underground through the basement." + \
                           "1 for roof 2 for basement")
     if (choice11 == 1):
         messagebox.showinfo("Roof",
                             "You go in on the roof and down into the bank")
+        choice14()
     elif (choice11 == 2):
         messagebox.showinfo("Basement",
                             "You go underground and through the basement quietly and enter the bank")
+        choice13()
     
     
     else:
         choice11()                                          
 
 def choice12():
-    choice12 = simpledialog.askinteger("Front Door" , "You go in guns blazing through the front door and make your way to the bank." + \
+    choice12 = simpledialog.askinteger("Front Door" , "You go in guns blazing through the front door and make your way to the Vault." + \
                             "Will you drill the Vault or blast the Vault open with explosives? 1 for Drill 2 for blast")
     if (choice12 == 1):
         messagebox.showinfo("Drill",
