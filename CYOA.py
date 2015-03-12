@@ -167,8 +167,6 @@ def choice3():
 
 def choice31():
 
-    choice = simpledialog.askinterger("")
-
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -178,12 +176,31 @@ def choice31():
         messagebox.showinfo("HOUSTON",
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
+        choice33()
 
-    if (choice === 2):
+    elif (choice === 2):
         messagebox.showinfo("HOUSTON",
                             "Youre taking the brave way, this may gain you respect"
                             "with your team, but this is scary stuff..."
                             "and you forgot your inhaler")
+        choice34()
+        
+    else:
+        choice31()
+
+def choice33():
+
+    choice = simpledialog.askinterger("HOUSTON",
+                                      "Now that you made the decision to stay you are the"
+                                      "eye in the sky. Its your call now. do you want to"
+                                      "jam all police scanners or just watch for the cops on the cams?"
+                                      "type 1 to jam them or 2 to watch.")
+
+    if (choice == 1):
+        messagebox.showinfo("HOUSTON",
+                            "playin it safe huh?"
+    
+        
 
 ################ Main #####################
 intro()
