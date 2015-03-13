@@ -51,6 +51,57 @@ def choice1():
         choice1()
 
 ################ Chris Renslow Functions #####################
+def choice16():
+        choice16 = simpledialog.askinteger("WIN", "You take the gold and exit the way you came quietly and safely." + \
+                                       "Now you have a choice will you betray your team and take all the money for yourself or share it?" + \
+                                           "1 for betray, 2 for trust")
+        if (choice16 == 1):
+        
+            messagebox.showinfo("Betray",
+                            "You kill your partners, steal the money and head to Mexico " + \
+                            "THE END")
+        elif (choice16 == 2):
+            messagebox.showinfo("Share",
+                            "You decide to be a good person and share the earning." + \
+                             "Everyone takes their cut, splits up and heads to Mexico. THE END")
+        else:
+               choice16()
+    
+    
+
+
+
+
+def choice15():
+    choice15 = simpledialog.askinteger("Snuck to the Vault" , 
+                                       "You snuck in to the vault and have a choice to either blast the vault open or drill it open."+ \
+                                        "1 for blast 2 for drill")
+    if (choice15 == 1):
+        messagebox.showinfo("Blast",
+                            "You blast the vault open with enough force to send a rocket to the moon." + \
+                            "Way too much for this vault, the explosion kills Ivan in the process. HEIST FAILED")
+        intro()
+        
+
+    elif (choice15 == 2):
+        messagebox.showinfo("Drill",
+                            "Sneaking past the guards, gives you time to use your weak drill on the safe" + \
+                             "You open the vault and the shine of the gold bars against the light blinds you.")
+        choice16()
+    
+    
+    else:
+        choice15()  
+    
+    
+                                    
+
+
+
+
+
+
+
 def choice14():
     choice14 = simpledialog.askinteger( "Roof" ,"Kill the guards or try and sneak past them to the vault on the roof? 1 for kill 2 for sneak")
 
@@ -82,6 +133,7 @@ def choice13():
     elif (choice13 == 2):
         messagebox.showinfo("Sneak",
                             "You easily sneak past the dimwitted guards and head to the Vault")
+        choice15()
     
     
     else:
@@ -96,6 +148,7 @@ def choice11():
         messagebox.showinfo("Roof",
                             "You go in on the roof and down into the bank")
         choice14()
+        
     elif (choice11 == 2):
         messagebox.showinfo("Basement",
                             "You go underground and through the basement quietly and enter the bank")
