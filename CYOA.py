@@ -4,13 +4,18 @@
 
 
 # Import Statements
+import random
 from tkinter import *
-import tkinter.simpledialog
-import tkinter.messagebox
+import tkinter.simpledialog as simpledialog
+import tkinter.messagebox as messagebox
+root = Tk()
 
 root = Tk()
 w = Label(root, text="Choose Your Own Adventure")
 w.pack()
+
+#Functions
+
 
 def intro():
     """ Introductory Function -> starts the story going """
@@ -29,6 +34,7 @@ def intro():
         choice3()
     else:
         intro()
+intro()
 
 ################ Ryan Rueber Functions #####################
 def choice1():
@@ -38,17 +44,22 @@ def choice1():
                                      "the bank Ivan must either knock out or kill the gaurds " + \
                                      "in order to safely get into the bank. (Type '1' to knock out the gaurds " + \
                                      "or type '2' to kill the guards.")
-    if (choice == 1):
-        def ko():
-            choice = simpledialog.askinteger("Choose wisely",
-                                             "You have elected to knock out the guards. " + \
-                                             "would you like to 
+def ko():
+    choice = simpledialog.askinteger("Knock Out Guards",
+                                     "You have elected to knock out the guards. " + \
+                                     "would you like to knock out all of the guards " + \
+                                     "or sneak around some of the guards. (Type '1' to " + \
+                                     "knock out all the guards or type '2' to sneak around " + \
+                                     "some of the guards).")
+    
+if (choice == 1):
+    choice1()
 
-    elif (choice == 2):
-        messagebox.showinfo("The End",
-                            "You chose ok.  THE END")
-    else:
-        choice1()
+elif (choice == 2):
+    messagebox.showinfo("The End",
+                        "You chose ok.  THE END")
+else:
+    choice1()
 
 ################ Chris Renslow Functions #####################
 def choice2():
@@ -89,7 +100,7 @@ def choice3():
         choice2()
 
 def choice31():
-    choice = simpledialog.askinterger("
+    choice = simpledialog.askinterger("")
 
 ################ Main #####################
 intro()
