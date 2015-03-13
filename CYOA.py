@@ -231,8 +231,9 @@ def choice31():
                             "no ammount of therapy could erase the bullying")
         choice33()
 
-    elif (choice === 2):
+    elif (choice == 2):
         messagebox.showinfo("HOUSTON",
+                            
                             "Youre taking the brave way, this may gain you respect"
                             "with your team, but this is scary stuff..."
                             "and you forgot your inhaler")
@@ -252,6 +253,47 @@ def choice33():
     if (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "playin it safe huh?"
+                            "dont waanna take a little risk?"
+                            "Just like always.")
+        choice35()
+
+    elif (choice == 2):
+        messagebox.showinfo("HOUSTON",
+                            "Wow Houston im impressed. youre taking a risk."
+                            "I thought you were just a nerd.")
+        choice36()
+
+def choice35():
+
+    choice = simpledialog.askinterger("HOUSTON",
+                                      "You hear a few shots ring out and you hit the jammer."
+                                      "all calls and radio within the bank are blocked."
+                                      "You watch on the cameras as Carmine and Ivan blast the vault"
+                                      "as they are loading the bags into the van you hear sirens"
+                                      "as they get closer ivan is shot in the leg by a lone surviving"
+                                      "guard. Carmine shoots the guard and runs over to help Ivan."
+                                      "But you are starting to panic as you hear the sirens just"
+                                      "A few blocks away. type 1 to leave with the money or 2 to"
+                                      "stay with your team.")
+
+    if (choice) == 1):
+        messagebox.showinfo("HOUSTON",
+                            "The tires squeal as you tear down the road."
+                            "as you turn you see cops begin to pour onto the street and surround"
+                            "Carmine and Ivan. you hear shots ring out as you drive away."
+                            "they co ntinue for a few seconds and abruptly end."
+                            "no reason to turn back now, and anyway youre already"
+                            "on your way to a sandy beach in mexico where you can lather"
+                            "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day")
+
+    elif (choice) == 1):
+        messagebox.showinfo("HOUSTON",
+                            "Carmine picks Ivan up and tosses him in the back of the van",
+                            "and he gets in the front. You drive away just in time and",
+                            "are unseen by police. You all sit in silence for a moment",
+                            "then in a heavy russian accent ivan says 'just a small town",
+                            "girl, livin in a lonely world' soon the whole van erupts in"
+                            "song as you head for Mexico"
     
         
 
