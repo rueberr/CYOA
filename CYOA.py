@@ -87,7 +87,7 @@ def choice15():
     elif (choice15 == 2):
         messagebox.showinfo("Drill",
                             "Sneaking past the guards gives you the extra time to use your weak drill on the vault. " + \
-                             "You open the vault and the shine of the gold bars against the light blinds you. 16 million in gold bars 4 million in bonds. " + \
+                             "You open the vault and the shine of the gold bars against the light blinds you. 17 million in gold bars 4 million in bonds. " + \
                             "You've pulled off the biggest heist of your career. ")
         choice16()
     
