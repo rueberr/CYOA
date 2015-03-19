@@ -45,42 +45,56 @@ def choice1():
 
 def ivan1():
     ivan1 = simpledialog.askinteger("Knock Out Guards",
-                                     "You have elected to knock out the guards. " + \
                                      "would you like to knock out all of the guards " + \
-                                     "or sneak around some of the guards. (Type '1' to " + \
+                                     "or sneak around some of the guards? (Type '1' to " + \
                                      "knock out all the guards or type '2' to sneak around " + \
                                      "some of the guards).")
 def ivan2():
-    ivan2 = simpledialog.askinteger("Knock Out All Guards",
-                                     "You have elected to knock out all of the " + \
-                                     "gaurds. Would you like to knock out all of the guards " + \
-                                     "or sneak around some of the guards. (Type '1' to " + \
-                                     "knock out all the guards or type '2' to sneak around " + \
-                                     "some of the guards).")
+    ivan2 = simpledialog.askinteger("Vault",
+                                     "Would you like to blast the vault " + \
+                                     "or drill the vault? (Type '1' to " + \
+                                     "blast the vault or type '2' to drill the vault).")
 
 
-
+#choice1 kill or knock out
 if (choice1 == 1):
    
     messagebox.showinfo("Knock Out",
                         "You have elected to knock out the guards. ")
     ivan1()                                
-
-
 elif (choice1 == 2):
     messagebox.showinfo("Kill",
                         "You have elected to kill the guards. ")
     ivan1()
 else:
     choice1()
-
+    
+#Ivan1 Knock out or sneak
 if (ivan1 = 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
-elif (ivan = 1):
+    ivan2()
+elif (ivan1 = 2):
     messagebox.showinfo("Sneak",
                         "You have elected to sneak around some guards. " + \
                         "The guards wake up and kill you. HEIST FAILED.")
+    intro()
+else:
+    ivan1()
+    
+#Ivan2 Vault
+if (ivan2 = 1)
+    messagebox.showinfo("Vault",
+                        "You have decided to blast the vault.")
+    ivan3()
+elif (ivan2 = 2):
+    messagebox.showinfo("Vault",
+                        "You have decided to drill the vault. " + \
+                        "Unfortunately, you have no drill experience. " + \
+                        "HEIST FAILED.")
+    intro()
+else:
+    ivan2()
 
 ################ Chris Renslow Functions #####################
 def choice16():
