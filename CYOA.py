@@ -259,12 +259,6 @@ def choice3():
 
 def choice31():
 
-    choice = simpledialog.askinterger("")
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 5157600109c187f1d3c869f07eda068ecfc5bff9
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -274,8 +268,9 @@ def choice31():
         messagebox.showinfo("HOUSTON",
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
+        choice33()
 
-<<<<<<< HEAD
+
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             
@@ -286,6 +281,35 @@ def choice31():
         
     else:
         choice31()
+def choice32():
+
+    choice = simpledialog.akinterger("HOUSTON",
+                                     "You get set up and head inside you let the others do the",
+                                     "heavy lifting and you just walk back to the vault.",
+                                     "You realize that this vault is fairly easy to hack,",
+                                     "but you did bring explosives to blow the vault...",
+                                     "type 1 to hack or 2 to blow it."
+
+    if (choice == 1):
+        messagebox.showinfo("HOUSTON",
+                            "You connect your computer to the vault and hack away",
+                            "after a few seconds you get it to open and your team",
+                            "moves in. as they are collecting money you attempt to",
+                            "Your computer but it errors the system and the vault",
+                            "locks closing your team inside",
+                            "HEIST FAILED")
+
+    elif (choice == 2):
+           messagebox.showinfo("HOUSTON",
+                               "youve logged thousands of hours playing call of duty",
+                               "What could possibly go wrong? you set and prime the C-4",
+                               "you take cover and hit the blast button. shrapnell hits",
+                               "ivan and disfigures him as all of the money is ruined",
+                               "you probably shouldnt of used so much",
+                               "HEIST FAILED"
+            
+                                     
+
 
 def choice33():
 
@@ -308,6 +332,14 @@ def choice33():
                             "I thought you were just a nerd.")
         choice36()
 
+def choice34():
+
+    messagebox.showinfo("HOUSTON",
+                        "The mask over your face may as well be smothering you.",
+                        "You cant breathe as you try to keep up. as soon as you",
+                        "walk through the door you trip and hit your head",
+                        "you wake up in a pair of handcuffs next to ivan and carmine.",
+                        "HEIST FAILED"
 def choice35():
 
     choice = simpledialog.askinterger("HOUSTON",
@@ -321,17 +353,17 @@ def choice35():
                                       "A few blocks away. type 1 to leave with the money or 2 to"
                                       "stay with your team.")
 
-    if (choice) == 1):
+    if (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "The tires squeal as you tear down the road."
                             "as you turn you see cops begin to pour onto the street and surround"
                             "Carmine and Ivan. you hear shots ring out as you drive away."
-                            "they co ntinue for a few seconds and abruptly end."
+                            "they continue for a few seconds and abruptly end."
                             "no reason to turn back now, and anyway youre already"
                             "on your way to a sandy beach in mexico where you can lather"
                             "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day")
 
-    elif (choice) == 1):
+    elif (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "Carmine picks Ivan up and tosses him in the back of the van",
                             "and he gets in the front. You drive away just in time and",
@@ -339,11 +371,16 @@ def choice35():
                             "then in a heavy russian accent ivan says 'just a small town",
                             "girl, livin in a lonely world' soon the whole van erupts in"
                             "song as you head for Mexico"
-    
-        
-=======
+def choice36():
 
->>>>>>> 940cbbcd2d6fb1424e6cd8833354cca2f7094756
+   messagebox.showinfo("HOUSTON",
+                       "Youre finally taking a risk. you feel so alive, but",
+                       "your glasses begin to fog up. As you take them off to",
+                       "clean them you drop them, then as you fumble on the ground for them",
+                       "you crush them. now you have no vision other than some blurs",
+                       "you attempt to look at the screen but you dont notice the brigade of",
+                       "charging into the bank and arresting both ivan and carmine.",
+                       "HEIST FAILLED")
 
 ################ Main #####################
 intro()
