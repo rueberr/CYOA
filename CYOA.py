@@ -60,6 +60,12 @@ def ivan3():
                                     "to the money. Would you like to betray your friends " + \
                                     "and take the money for yourself or share the money with your friends? " + \
                                     "(type '1' to betray or type '2' to share.")
+def ivan4():
+    ivan4 = simpledialog.askinteger("Bodies",
+                                    "You have killed the guards. Would you like to hide " + \
+                                    "the bodies or leave the bodies? (Type '1' to hide the " + \
+                                    "bodies or type '2' to leave the bodies.")
+    
                             
 
 
@@ -72,7 +78,7 @@ if (choice1 == 1):
 elif (choice1 == 2):
     messagebox.showinfo("Kill",
                         "You have elected to kill the guards. ")
-    ivan1()
+    ivan4()
 else:
     choice1()
     
@@ -118,7 +124,20 @@ elif (ivan3 == 2):
     intro()
 else:
     ivan3()
-
+#Ivan4 Bodies
+if (ivan4 == 1):
+    messagebox.showinfo("Bodies",
+                        "You have decided to hide the bodies. " + \
+                        "In the process of hiding the bodies " + \
+                        "you drop your gun and it misfires and " + \
+                        "kills you. HEIST FAILED.")
+    intro()
+elif (ivan4 == 2):
+    messagebox.showinfo("Bodies",
+                        "You have decided to leave the bodies. " + \
+                        "A civilian sees the bodies and calls " + \
+                        "the police. HEIST FAILED.")
+    intro()
 ################ Chris Renslow Functions #####################
 def choice16():
         choice16 = simpledialog.askinteger("WIN", "You take the gold and exit the way you came quietly and safely. " + \
