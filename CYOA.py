@@ -54,6 +54,13 @@ def ivan2():
                                      "Would you like to blast the vault " + \
                                      "or drill the vault? (Type '1' to " + \
                                      "blast the vault or type '2' to drill the vault).")
+def ivan3():
+    ivan3 = simpledialog.askinteger("Money",
+                                    "You have drilled the vault and gained access " + \
+                                    "to the money. Would you like to betray your friends " + \
+                                    "and take the money for yourself or share the money with your friends? " + \
+                                    "(type '1' to betray or type '2' to share.")
+                            
 
 
 #choice1 kill or knock out
@@ -70,11 +77,11 @@ else:
     choice1()
     
 #Ivan1 Knock out or sneak
-if (ivan1 = 1):
+if (ivan1 == 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
     ivan2()
-elif (ivan1 = 2):
+elif (ivan1 == 2):
     messagebox.showinfo("Sneak",
                         "You have elected to sneak around some guards. " + \
                         "The guards wake up and kill you. HEIST FAILED.")
@@ -83,11 +90,11 @@ else:
     ivan1()
     
 #Ivan2 Vault
-if (ivan2 = 1)
+if (ivan2 == 1):
     messagebox.showinfo("Vault",
                         "You have decided to blast the vault.")
     ivan3()
-elif (ivan2 = 2):
+elif (ivan2 == 2):
     messagebox.showinfo("Vault",
                         "You have decided to drill the vault. " + \
                         "Unfortunately, you have no drill experience. " + \
@@ -95,6 +102,22 @@ elif (ivan2 = 2):
     intro()
 else:
     ivan2()
+
+#Ivan3 Money
+if (ivan3 == 1):
+    messagebox.showinfo("Money",
+                        "You have decided to betray your friends and " + \
+                        "take the money for yourself. You safely make it " + \
+                        "to Canada and live a happy life with your money.")
+    intro()
+elif (ivan3 == 2):
+    messagebox.showinfo("Money",
+                        "You have decided to share with your friends. " + \
+                        "You and your friends live the rest of your " + \
+                        "days in luxury.")
+    intro()
+else:
+    ivan3()
 
 ################ Chris Renslow Functions #####################
 def choice16():
@@ -275,10 +298,7 @@ def choice31():
 
     choice = simpledialog.askinterger("")
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 5157600109c187f1d3c869f07eda068ecfc5bff9
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -289,7 +309,7 @@ def choice31():
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
 
-<<<<<<< HEAD
+
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             
