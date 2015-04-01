@@ -74,10 +74,10 @@ elif (choice1 == 2):
 else:
     choice1()
 
-if (ivan1 = 1):
+if (ivan1 == 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
-elif (ivan = 1):
+elif (ivan1 == 1):
     messagebox.showinfo("Sneak",
                         "You have elected to sneak around some guards. " + \
                         "The guards wake up and kill you. HEIST FAILED.")
@@ -261,10 +261,9 @@ def choice31():
 
     choice = simpledialog.askinterger("")
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 5157600109c187f1d3c869f07eda068ecfc5bff9
+
+
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -275,7 +274,7 @@ def choice31():
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
 
-<<<<<<< HEAD
+
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             
@@ -321,7 +320,7 @@ def choice35():
                                       "A few blocks away. type 1 to leave with the money or 2 to"
                                       "stay with your team.")
 
-    if (choice) == 1):
+    if (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "The tires squeal as you tear down the road."
                             "as you turn you see cops begin to pour onto the street and surround"
@@ -331,19 +330,19 @@ def choice35():
                             "on your way to a sandy beach in mexico where you can lather"
                             "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day")
 
-    elif (choice) == 1):
+    elif (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "Carmine picks Ivan up and tosses him in the back of the van",
                             "and he gets in the front. You drive away just in time and",
                             "are unseen by police. You all sit in silence for a moment",
                             "then in a heavy russian accent ivan says 'just a small town",
                             "girl, livin in a lonely world' soon the whole van erupts in"
-                            "song as you head for Mexico"
+                            "song as you head for Mexico")
     
         
-=======
 
->>>>>>> 940cbbcd2d6fb1424e6cd8833354cca2f7094756
+
+
 
 ################ Main #####################
 intro()
