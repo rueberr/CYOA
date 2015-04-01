@@ -45,43 +45,107 @@ def choice1():
 
 def ivan1():
     ivan1 = simpledialog.askinteger("Knock Out Guards",
-                                     "You have elected to knock out the guards. " + \
                                      "would you like to knock out all of the guards " + \
-                                     "or sneak around some of the guards. (Type '1' to " + \
+                                     "or sneak around some of the guards? (Type '1' to " + \
                                      "knock out all the guards or type '2' to sneak around " + \
                                      "some of the guards).")
 def ivan2():
-    ivan2 = simpledialog.askinteger("Knock Out All Guards",
-                                     "You have elected to knock out all of the " + \
-                                     "gaurds. Would you like to knock out all of the guards " + \
-                                     "or sneak around some of the guards. (Type '1' to " + \
-                                     "knock out all the guards or type '2' to sneak around " + \
-                                     "some of the guards).")
+    ivan2 = simpledialog.askinteger("Vault",
+                                     "Would you like to blast the vault " + \
+                                     "or drill the vault? (Type '1' to " + \
+                                     "blast the vault or type '2' to drill the vault).")
+def ivan3():
+    ivan3 = simpledialog.askinteger("Money",
+                                    "You have drilled the vault and gained access " + \
+                                    "to the money. Would you like to betray your friends " + \
+                                    "and take the money for yourself or share the money with your friends? " + \
+                                    "(type '1' to betray or type '2' to share.")
+def ivan4():
+    ivan4 = simpledialog.askinteger("Bodies",
+                                    "You have killed the guards. Would you like to hide " + \
+                                    "the bodies or leave the bodies? (Type '1' to hide the " + \
+                                    "bodies or type '2' to leave the bodies.")
+    
+                            
 
 
-
+#choice1 kill or knock out
 if (choice1 == 1):
    
     messagebox.showinfo("Knock Out",
                         "You have elected to knock out the guards. ")
     ivan1()                                
-
-
 elif (choice1 == 2):
     messagebox.showinfo("Kill",
                         "You have elected to kill the guards. ")
-    ivan1()
+    ivan4()
 else:
     choice1()
+<<<<<<< HEAD
 
 if (ivan1 == 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
 elif (ivan1 == 1):
+=======
+    
+#Ivan1 Knock out or sneak
+if (ivan1 == 1):
+    messagebox.showinfo("Knock Out All Guards",
+                        "You have elected to knock out all guards. ")
+    ivan2()
+elif (ivan1 == 2):
+
     messagebox.showinfo("Sneak",
                         "You have elected to sneak around some guards. " + \
                         "The guards wake up and kill you. HEIST FAILED.")
+    intro()
+else:
+    ivan1()
+    
+#Ivan2 Vault
+if (ivan2 == 1):
+    messagebox.showinfo("Vault",
+                        "You have decided to blast the vault.")
+    ivan3()
+elif (ivan2 == 2):
+    messagebox.showinfo("Vault",
+                        "You have decided to drill the vault. " + \
+                        "Unfortunately, you have no drill experience. " + \
+                        "HEIST FAILED.")
+    intro()
+else:
+    ivan2()
 
+#Ivan3 Money
+if (ivan3 == 1):
+    messagebox.showinfo("Money",
+                        "You have decided to betray your friends and " + \
+                        "take the money for yourself. You safely make it " + \
+                        "to Canada and live a happy life with your money.")
+    intro()
+elif (ivan3 == 2):
+    messagebox.showinfo("Money",
+                        "You have decided to share with your friends. " + \
+                        "You and your friends live the rest of your " + \
+                        "days in luxury.")
+    intro()
+else:
+    ivan3()
+#Ivan4 Bodies
+if (ivan4 == 1):
+    messagebox.showinfo("Bodies",
+                        "You have decided to hide the bodies. " + \
+                        "In the process of hiding the bodies " + \
+                        "you drop your gun and it misfires and " + \
+                        "kills you. HEIST FAILED.")
+    intro()
+elif (ivan4 == 2):
+    messagebox.showinfo("Bodies",
+                        "You have decided to leave the bodies. " + \
+                        "A civilian sees the bodies and calls " + \
+                        "the police. HEIST FAILED.")
+    intro()
 ################ Chris Renslow Functions #####################
 def choice16():
         choice16 = simpledialog.askinteger("WIN", "You take the gold and exit the way you came quietly and safely. " + \
@@ -259,7 +323,8 @@ def choice3():
 
 def choice31():
 
-    choice = simpledialog.askinterger("")
+
+
 
 
 
@@ -273,6 +338,8 @@ def choice31():
         messagebox.showinfo("HOUSTON",
                             "You're a bit wimpy, but then again you always have been"+ \
                             "no ammount of therapy could erase the bullying")
+        choice33()
+
 
 
     elif (choice == 2):
@@ -285,6 +352,35 @@ def choice31():
         
     else:
         choice31()
+def choice32():
+
+    choice = simpledialog.akinterger("HOUSTON",
+                                     "You get set up and head inside you let the others do the",
+                                     "heavy lifting and you just walk back to the vault.",
+                                     "You realize that this vault is fairly easy to hack,",
+                                     "but you did bring explosives to blow the vault...",
+                                     "type 1 to hack or 2 to blow it."
+
+    if (choice == 1):
+        messagebox.showinfo("HOUSTON",
+                            "You connect your computer to the vault and hack away",
+                            "after a few seconds you get it to open and your team",
+                            "moves in. as they are collecting money you attempt to",
+                            "Your computer but it errors the system and the vault",
+                            "locks closing your team inside",
+                            "HEIST FAILED")
+
+    elif (choice == 2):
+           messagebox.showinfo("HOUSTON",
+                               "youve logged thousands of hours playing call of duty",
+                               "What could possibly go wrong? you set and prime the C-4",
+                               "you take cover and hit the blast button. shrapnell hits",
+                               "ivan and disfigures him as all of the money is ruined",
+                               "you probably shouldnt of used so much",
+                               "HEIST FAILED"
+            
+                                     
+
 
 def choice33():
 
@@ -307,6 +403,14 @@ def choice33():
                             "I thought you were just a nerd.")
         choice36()
 
+def choice34():
+
+    messagebox.showinfo("HOUSTON",
+                        "The mask over your face may as well be smothering you.",
+                        "You cant breathe as you try to keep up. as soon as you",
+                        "walk through the door you trip and hit your head",
+                        "you wake up in a pair of handcuffs next to ivan and carmine.",
+                        "HEIST FAILED"
 def choice35():
 
     choice = simpledialog.askinterger("HOUSTON",
@@ -325,7 +429,7 @@ def choice35():
                             "The tires squeal as you tear down the road."
                             "as you turn you see cops begin to pour onto the street and surround"
                             "Carmine and Ivan. you hear shots ring out as you drive away."
-                            "they co ntinue for a few seconds and abruptly end."
+                            "they continue for a few seconds and abruptly end."
                             "no reason to turn back now, and anyway youre already"
                             "on your way to a sandy beach in mexico where you can lather"
                             "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day")
@@ -337,11 +441,25 @@ def choice35():
                             "are unseen by police. You all sit in silence for a moment",
                             "then in a heavy russian accent ivan says 'just a small town",
                             "girl, livin in a lonely world' soon the whole van erupts in"
+
                             "song as you head for Mexico")
     
         
 
 
+
+
+                            "song as you head for Mexico"
+def choice36():
+
+   messagebox.showinfo("HOUSTON",
+                       "Youre finally taking a risk. you feel so alive, but",
+                       "your glasses begin to fog up. As you take them off to",
+                       "clean them you drop them, then as you fumble on the ground for them",
+                       "you crush them. now you have no vision other than some blurs",
+                       "you attempt to look at the screen but you dont notice the brigade of",
+                       "charging into the bank and arresting both ivan and carmine.",
+                       "HEIST FAILLED")
 
 
 ################ Main #####################
