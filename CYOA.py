@@ -36,12 +36,63 @@ def intro():
         intro()
 
 ################ Ryan Rueber Functions #####################
-def choice1():
-    choice1 = simpledialog.askinteger("IVAN",
-                                     "You have chosen Ivan to be your character. As you approach " + \
-                                     "the bank Ivan must either knock out or kill the gaurds " + \
-                                     "in order to safely get into the bank. (Type '1' to knock out the gaurds " + \
-                                     "or type '2' to kill the guards.")
+def ivan4():
+    ivan4 = simpledialog.askinteger("Bodies",
+                                    "You have killed the guards. Would you like to hide " + \
+                                    "the bodies or leave the bodies? (Type '1' to hide the " + \
+                                    "bodies or type '2' to leave the bodies.")
+    if (ivan4 == 1):
+        messagebox.showinfo("Bodies",
+                            "You have decided to hide the bodies. " + \
+                            "In the process of hiding the bodies " + \
+                            "you drop your gun and it misfires and " + \
+                            "kills you. HEIST FAILED.")
+        intro()
+    elif (ivan4 == 2):
+        messagebox.showinfo("Bodies",
+                            "You have decided to leave the bodies. " + \
+                            "A civilian sees the bodies and calls " + \
+                            "the police. HEIST FAILED.")
+        intro()
+    else:
+        ivan4()
+def ivan3():
+    ivan3 = simpledialog.askinteger("Money",
+                                    "You have drilled the vault and gained access " + \
+                                    "to the money. Would you like to betray your friends " + \
+                                    "and take the money for yourself or share the money with your friends? " + \
+                                    "(type '1' to betray or type '2' to share.")
+    if (ivan3 == 1):
+        messagebox.showinfo("Money",
+                            "You have decided to betray your friends and " + \
+                            "take the money for yourself. You safely make it " + \
+                            "to Canada and live a happy life with your money.")
+        intro()
+    elif (ivan3 == 2):
+        messagebox.showinfo("Money",
+                            "You have decided to share with your friends. " + \
+                            "You and your friends live the rest of your " + \
+                            "days in luxury.")
+        intro()
+    else:
+        ivan3()
+def ivan2():
+    ivan2 = simpledialog.askinteger("Vault",
+                                     "Would you like to blast the vault " + \
+                                     "or drill the vault? (Type '1' to " + \
+                                     "blast the vault or type '2' to drill the vault).")
+    if (ivan2 == 1):
+        messagebox.showinfo("Vault",
+                            "You have decided to blast the vault.")
+        ivan3()
+    elif (ivan2 == 2):
+        messagebox.showinfo("Vault",
+                            "You have decided to drill the vault. " + \
+                            "Unfortunately, you have no drill experience. " + \
+                            "HEIST FAILED.")
+        intro()
+    else:
+        ivan2()
 
 def ivan1():
     ivan1 = simpledialog.askinteger("Knock Out Guards",
@@ -49,95 +100,37 @@ def ivan1():
                                      "or sneak around some of the guards? (Type '1' to " + \
                                      "knock out all the guards or type '2' to sneak around " + \
                                      "some of the guards).")
-def ivan2():
-    ivan2 = simpledialog.askinteger("Vault",
-                                     "Would you like to blast the vault " + \
-                                     "or drill the vault? (Type '1' to " + \
-                                     "blast the vault or type '2' to drill the vault).")
-def ivan3():
-    ivan3 = simpledialog.askinteger("Money",
-                                    "You have drilled the vault and gained access " + \
-                                    "to the money. Would you like to betray your friends " + \
-                                    "and take the money for yourself or share the money with your friends? " + \
-                                    "(type '1' to betray or type '2' to share.")
-def ivan4():
-    ivan4 = simpledialog.askinteger("Bodies",
-                                    "You have killed the guards. Would you like to hide " + \
-                                    "the bodies or leave the bodies? (Type '1' to hide the " + \
-                                    "bodies or type '2' to leave the bodies.")
-    
-                            
-
-
-#choice1 kill or knock out
-if (choice1 == 1):
+    if (ivan1 == 1):
+        messagebox.showinfo("Knock Out All Guards",
+                            "You have elected to knock out all guards. ")
+        ivan2()
+    elif (ivan1 == 2):
+        messagebox.showinfo("Sneak",
+                            "You have elected to sneak around some guards. " + \
+                            "The guards wake up and kill you. HEIST FAILED.")
+        intro()
+    else:
+        ivan1()
+def choice1():
+    choice1 = simpledialog.askinteger("IVAN",
+                                     "You have chosen Ivan to be your character. As you approach " + \
+                                     "the bank Ivan must either knock out or kill the gaurds " + \
+                                     "in order to safely get into the bank. (Type '1' to knock out the gaurds " + \
+                                     "or type '2' to kill the guards.")
+    if (choice1 == 1):
    
-    messagebox.showinfo("Knock Out",
-                        "You have elected to knock out the guards. ")
-    ivan1()                                
-elif (choice1 == 2):
-    messagebox.showinfo("Kill",
-                        "You have elected to kill the guards. ")
-    ivan4()
-else:
-    choice1()
-    
-#Ivan1 Knock out or sneak
-if (ivan1 == 1):
-    messagebox.showinfo("Knock Out All Guards",
-                        "You have elected to knock out all guards. ")
-    ivan2()
-elif (ivan1 == 2):
-    messagebox.showinfo("Sneak",
-                        "You have elected to sneak around some guards. " + \
-                        "The guards wake up and kill you. HEIST FAILED.")
-    intro()
-else:
-    ivan1()
-    
-#Ivan2 Vault
-if (ivan2 == 1):
-    messagebox.showinfo("Vault",
-                        "You have decided to blast the vault.")
-    ivan3()
-elif (ivan2 == 2):
-    messagebox.showinfo("Vault",
-                        "You have decided to drill the vault. " + \
-                        "Unfortunately, you have no drill experience. " + \
-                        "HEIST FAILED.")
-    intro()
-else:
-    ivan2()
+        messagebox.showinfo("Knock Out",
+                            "You have elected to knock out the guards. ")
+        ivan1()                                
+    elif (choice1 == 2):
+        messagebox.showinfo("Kill",
+                            "You have elected to kill the guards. ")
+        ivan4()
+    else:
+        choice1()
 
-#Ivan3 Money
-if (ivan3 == 1):
-    messagebox.showinfo("Money",
-                        "You have decided to betray your friends and " + \
-                        "take the money for yourself. You safely make it " + \
-                        "to Canada and live a happy life with your money.")
-    intro()
-elif (ivan3 == 2):
-    messagebox.showinfo("Money",
-                        "You have decided to share with your friends. " + \
-                        "You and your friends live the rest of your " + \
-                        "days in luxury.")
-    intro()
-else:
-    ivan3()
-#Ivan4 Bodies
-if (ivan4 == 1):
-    messagebox.showinfo("Bodies",
-                        "You have decided to hide the bodies. " + \
-                        "In the process of hiding the bodies " + \
-                        "you drop your gun and it misfires and " + \
-                        "kills you. HEIST FAILED.")
-    intro()
-elif (ivan4 == 2):
-    messagebox.showinfo("Bodies",
-                        "You have decided to leave the bodies. " + \
-                        "A civilian sees the bodies and calls " + \
-                        "the police. HEIST FAILED.")
-    intro()
+
+
 ################ Chris Renslow Functions #####################
 def choice16():
         choice16 = simpledialog.askinteger("WIN", "You take the gold and exit the way you came quietly and safely. " + \
@@ -315,12 +308,11 @@ def choice3():
 
 def choice31():
 
-<<<<<<< HEAD
-=======
+
     choice = simpledialog.askinterger("")
 
 
->>>>>>> bd6442a7456506b1b2c772777b256bdc139f86f6
+
     choice = simpledialog.askinterger("HOUSTON",
                                       "You turn off the cameras. It was easy... too easy..."+ \
                                       "but now you are faced with a choice. stay in the saftey of the van"+ \
@@ -333,10 +325,7 @@ def choice31():
         choice33()
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bd6442a7456506b1b2c772777b256bdc139f86f6
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             
