@@ -78,6 +78,19 @@ if (ivan1 = 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
 elif (ivan = 1):
+
+if (ivan1 == 1):
+    messagebox.showinfo("Knock Out All Guards",
+                        "You have elected to knock out all guards. ")
+elif (ivan1 == 1):
+
+#Ivan1 Knock out or sneak
+if (ivan1 == 1):
+    messagebox.showinfo("Knock Out All Guards",
+                        "You have elected to knock out all guards. ")
+    ivan2()
+elif (ivan1 == 2):
+
     messagebox.showinfo("Sneak",
                         "You have elected to sneak around some guards. " + \
                         "The guards wake up and kill you. HEIST FAILED.")
@@ -261,6 +274,13 @@ def choice35():
                                       "stay with your team.")
 
     if (choice35 == 1):
+
+    choice = simpledialog.askinterger("HOUSTON",
+                                      "You turn off the cameras. It was easy... too easy..."+ \
+                                      "but now you are faced with a choice. stay in the saftey of the van"+ \
+                                      "or risk it and go inside with the team and make sure they get the job done right."+ \
+                                      "type 1 to stay, or 2 to go.")
+    if (choice == 1):
         messagebox.showinfo("HOUSTON",
                             "The tires squeal as you tear down the road."
                             "as you turn you see cops begin to pour onto the street and surround"
@@ -297,6 +317,8 @@ def choice33():
                                       "type 1 to jam them or 2 to watch.")
 
     if (choice33 == 1):
+
+    elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             "playin it safe huh?"
                             "dont waanna take a little risk?"
@@ -382,9 +404,6 @@ def choice3():
         choice32()
     else:
         choice3()
-
-
-
 
 
 ################ Main #####################
