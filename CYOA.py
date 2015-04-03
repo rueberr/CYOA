@@ -81,13 +81,12 @@ elif (choice1 == 2):
     ivan4()
 else:
     choice1()
-<<<<<<< HEAD
 
 if (ivan1 == 1):
     messagebox.showinfo("Knock Out All Guards",
                         "You have elected to knock out all guards. ")
 elif (ivan1 == 1):
-=======
+
     
 #Ivan1 Knock out or sneak
 if (ivan1 == 1):
