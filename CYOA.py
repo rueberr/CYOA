@@ -402,6 +402,27 @@ def choice32():
                                "you probably shouldnt of used so much"
                                "HEIST FAILED")
     else: choice32()
+def choice37():
+
+    choice31 = simpledialog.askinteger("HOUSTON",
+                                      "You let the police watch you take their money..."+ \
+                                      "but now you are faced with a choice. stay in the saftey of the van"+ \
+                                      "or risk it and go inside with the team and make sure they get the job done right."+ \
+                                      "type 1 to stay, or 2 to go.")
+    if (choice31 == 1):
+        messagebox.showinfo("HOUSTON",
+                            "You're a bit wimpy, but then again you always have been"+ \
+                            "no ammount of therapy could erase the bullying")
+        choice33()
+
+
+    elif (choice31 == 2):
+        messagebox.showinfo("HOUSTON",
+                            
+                            "Youre taking the brave way, this may gain you respect"
+                            "with your team, but this is scary stuff..."
+                            "and you forgot your inhaler")
+        choice34()
 def choice31():
 
     choice31 = simpledialog.askinteger("HOUSTON",
@@ -445,7 +466,7 @@ def choice3():
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
                             "Your choice may prove unwise but all you can think of is money.")
-        choice31()
+        choice37()
     else:
         choice3()
 
