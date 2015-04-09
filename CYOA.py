@@ -116,8 +116,8 @@ def ivan1():
 def choice1():
     choice1 = simpledialog.askinteger("IVAN",
                                      "You have chosen Ivan to be your character. As you approach " + \
-                                     "the bank Ivan must either knock out or kill the gaurds " + \
-                                     "in order to safely get into the bank. (Type '1' to knock out the gaurds " + \
+                                     "the bank Ivan must either knock out or kill the guards " + \
+                                     "in order to safely get into the bank. (Type '1' to knock out the guards " + \
                                      "or type '2' to kill the guards.")
     if (choice1 == 1):
    
@@ -299,70 +299,70 @@ def choice36():
     
 
     messagebox.showinfo("HOUSTON",
-                       "Youre finally taking a risk. you feel so alive, but"
-                       "your glasses begin to fog up. As you take them off to"
-                       "clean them you drop them, then as you fumble on the ground for them"
-                       "you crush them. now you have no vision other than some blurs"
-                       "you attempt to look at the screen but you dont notice the brigade of"
-                       "charging into the bank and arresting both ivan and carmine."
+                       "Youre finally taking a risk. you feel so alive, but "+ \
+                       "your glasses begin to fog up. As you take them off to "+ \
+                       "clean them you drop them, then as you fumble on the ground for them "+ \
+                       "you crush them. now you have no vision other than some blurs "+ \
+                       "you attempt to look at the screen but you dont notice the brigade of police "+ \
+                       "charging into the bank and arresting both Ivan and Carmine. "+ \
                        "HEIST FAILLED")
     intro()
 def choice35():
 
     choice35 = simpledialog.askinteger("HOUSTON",
-                                      "You hear a few shots ring out and you hit the jammer."
-                                      "all calls and radio within the bank are blocked."
-                                      "You watch on the cameras as Carmine and Ivan blast the vault"
-                                      "as they are loading the bags into the van you hear sirens"
-                                      "as they get closer ivan is shot in the leg by a lone surviving"
-                                      "guard. Carmine shoots the guard and runs over to help Ivan."
-                                      "But you are starting to panic as you hear the sirens just"
-                                      "A few blocks away. type 1 to leave with the money or 2 to"
+                                      "You hear a few shots ring out and you hit the jammer. "+ \
+                                      "All calls and radio within the bank are blocked. "+ \
+                                      "You watch on the cameras as Carmine and Ivan blast the vault "+ \
+                                      "as they are loading the bags into the van you hear sirens "+ \
+                                      "as they get closer Ivan is shot in the leg by a lone surviving "+ \
+                                      "guard. Carmine shoots the guard and runs over to help Ivan. "+ \
+                                      "But you are starting to panic as you hear the sirens just "+ \
+                                      "A few blocks away. type 1 to leave with the money or 2 to "+ \
                                       "stay with your team.")
 
 
     
     if (choice35 == 1):
         messagebox.showinfo("HOUSTON",
-                            "The tires squeal as you tear down the road."
-                            "as you turn you see cops begin to pour onto the street and surround"
-                            "Carmine and Ivan. you hear shots ring out as you drive away."
-                            "they continue for a few seconds and abruptly end."
-                            "no reason to turn back now, and anyway youre already"
-                            "on your way to a sandy beach in mexico where you can lather"
-                            "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day")
+                            "The tires squeal as you tear down the road. "+ \
+                            "as you turn you see cops begin to pour onto the street and surround "+ \
+                            "Carmine and Ivan. you hear shots ring out as you drive away. "+ \
+                            "they continue for a few seconds and abruptly end. "+ \
+                            "no reason to turn back now, and anyway youre already"+ \
+                            "on your way to a sandy beach in Mexico where you can lather "+ \
+                            "yourself in 10,000 spf sunscreen and drink virgin cuba libres all day ")
         intro()
     elif (choice35 == 2):
         messagebox.showinfo("HOUSTON",
-                            "Carmine picks Ivan up and tosses him in the back of the van"
-                            "and he gets in the front. You drive away just in time and"
-                            "are unseen by police. You all sit in silence for a moment"
-                            "then in a heavy russian accent ivan says 'just a small town"
-                            "girl, livin in a lonely world' soon the whole van erupts in"
+                            "Carmine picks Ivan up and tosses him in the back of the van "+ \
+                            "and he gets in the front. You drive away just in time and "+ \
+                            "are unseen by police. You all sit in silence for a moment "+ \
+                            "then in a heavy russian accent Ivan says 'just a small town "+ \
+                            "girl, livin in a lonely world' soon the whole van erupts in "+ \
                             "song as you head for Mexico")
         intro()
 def choice34():
 
     messagebox.showinfo("HOUSTON",
-                        "The mask over your face may as well be smothering you."
-                        "You cant breathe as you try to keep up. as soon as you"
-                        "walk through the door you trip and hit your head"
-                        "you wake up in a pair of handcuffs next to ivan and carmine."
+                        "The mask over your face may as well be smothering you. "+ \
+                        "You can't breathe as you try to keep up. As soon as you "+ \
+                        "walk through the door you trip and hit your head. "+ \
+                        "You wake up in a pair of handcuffs next to Ivan and Carmine. "+ \
                         "HEIST FAILED")
     intro()
 def choice33():
 
     choice33 = simpledialog.askinteger("HOUSTON",
-                                      "Now that you made the decision to stay you are the"
-                                      "eye in the sky. Its your call now. do you want to"
-                                      "jam all police scanners or just watch for the cops on the cams?"
-                                      "type 1 to jam them or 2 to watch.")
+                                      "Now that you made the decision to stay you are the " + \
+                                      "eye in the sky. It's your call now. Do you want to "+ \
+                                      "jam all police scanners or just watch for the cops on the cams? "+ \
+                                      "Type 1 to jam them or 2 to watch. ")
 
     if (choice33 == 1):
         messagebox.showinfo("HOUSTON",
-                            "playin it safe huh?"
-                            "dont waanna take a little risk?"
-                            "Just like always.")
+                            "Playin' it safe huh? "+ \
+                            "Don't wanna take a little risk? "+ \
+                            "Just like always. ")
 
 
 
@@ -370,7 +370,7 @@ def choice33():
 
     elif (choice33 == 2):
         messagebox.showinfo("HOUSTON",
-                            "Wow Houston im impressed. youre taking a risk."
+                            "Wow Houston im impressed. youre taking a risk. "+ \
                             "I thought you were just a nerd.")
         choice36()
     else:
@@ -378,40 +378,42 @@ def choice33():
 def choice32():
 
     choice32 = simpledialog.askinteger("HOUSTON",
-                                     "You get set up and head inside you let the others do the"
-                                     "heavy lifting and you just walk back to the vault."
-                                     "You realize that this vault is fairly easy to hack,"
-                                     "but you did bring explosives to blow the vault..."
-                                     "type 1 to hack or 2 to blow it.")
+                                     "You get set up and head inside you let the others do the "+ \
+                                     "heavy lifting and you just walk back to the vault. "+ \
+                                     "You realize that this vault is fairly easy to hack, "+ \
+                                     "but you did bring explosives to blow the vault... "+ \
+                                     "type 1 to hack or 2 to blow it. ")
 
     if (choice32 == 1):
         messagebox.showinfo("HOUSTON",
-                            "You connect your computer to the vault and hack away"
-                            "after a few seconds you get it to open and your team"
-                            "moves in. as they are collecting money you attempt to"
-                            "Your computer but it errors the system and the vault"
-                            "locks closing your team inside"
+                            "You connect your computer to the vault and hack away "+ \
+                            "after a few seconds you get it to open and your team "+ \
+                            "moves in. as they are collecting money you attempt to "+ \
+                            "Your computer but it errors the system and the vault "+ \
+                            "locks closing your team inside "+ \
                             "HEIST FAILED")
+        intro()
 
     elif (choice32 == 2):
            messagebox.showinfo("HOUSTON",
-                               "youve logged thousands of hours playing call of duty"
-                               "What could possibly go wrong? you set and prime the C-4"
-                               "you take cover and hit the blast button. shrapnell hits"
-                               "ivan and disfigures him as all of the money is ruined"
-                               "you probably shouldnt of used so much"
+                               "youve logged thousands of hours playing Call of Duty. "+ \
+                               "What could possibly go wrong? you set and prime the C-4 "+ \
+                               "you take cover and hit the blast button. shrapnel hits "+ \
+                               "Ivan and disfigures him as all of the money is ruined. "+ \
+                               "You probably shouldn't of used so much... "+ \
                                "HEIST FAILED")
+           intro()
     else: choice32()
 def choice37():
 
     choice31 = simpledialog.askinteger("HOUSTON",
-                                      "You let the police watch you take their money..."+ \
-                                      "but now you are faced with a choice. stay in the saftey of the van"+ \
-                                      "or risk it and go inside with the team and make sure they get the job done right."+ \
+                                      "You let the police watch you take their money... "+ \
+                                      "but now you are faced with a choice. stay in the saftey of the van "+ \
+                                      "or risk it and go inside with the team and make sure they get the job done right. "+ \
                                       "type 1 to stay, or 2 to go.")
     if (choice31 == 1):
         messagebox.showinfo("HOUSTON",
-                            "You're a bit wimpy, but then again you always have been"+ \
+                            "You're a bit wimpy, but then again you always have been "+ \
                             "no ammount of therapy could erase the bullying")
         choice33()
 
@@ -419,53 +421,53 @@ def choice37():
     elif (choice31 == 2):
         messagebox.showinfo("HOUSTON",
                             
-                            "Youre taking the brave way, this may gain you respect"
-                            "with your team, but this is scary stuff..."
+                            "Your'e taking the brave way, this may gain you respect "
+                            "with your team, but this is scary stuff... "
                             "and you forgot your inhaler")
-        choice34()
+        choice32()
 def choice31():
 
     choice31 = simpledialog.askinteger("HOUSTON",
-                                      "You turn off the cameras. It was easy... too easy..."+ \
-                                      "but now you are faced with a choice. stay in the saftey of the van"+ \
-                                      "or risk it and go inside with the team and make sure they get the job done right."+ \
+                                      "You turn off the cameras. It was easy... too easy... "+ \
+                                      "but now you are faced with a choice. stay in the saftey of the van "+ \
+                                      "or risk it and go inside with the team and make sure they get the job done right. "+ \
                                       "type 1 to stay, or 2 to go.")
     if (choice31 == 1):
         messagebox.showinfo("HOUSTON",
-                            "You're a bit wimpy, but then again you always have been"+ \
-                            "no ammount of therapy could erase the bullying")
+                            "You're a bit wimpy, but then again you always have been "+ \
+                            "no amount of therapy could erase the bullying ")
         choice33()
 
 
     elif (choice31 == 2):
         messagebox.showinfo("HOUSTON",
                             
-                            "Youre taking the brave way, this may gain you respect"
-                            "with your team, but this is scary stuff..."
+                            "Youre taking the brave way, this may gain you respect "
+                            "with your team, but this is scary stuff... "
                             "and you forgot your inhaler")
         choice34()
         
     else:
         choice31()
 def choice3():
-    choice = simpledialog.askinteger("You have chosen HOUSTON", 
-                                     "HOUSTON is the brains of the operation."
-                                     "The entire heist rides on you."
+    choice = simpledialog.askinteger("You have chosen HOUSTON ", 
+                                     "HOUSTON is the brains of the operation. "
+                                     "The entire heist rides on you. "
                                      "Now for your first choice."
-                                     "Turn the cameras off and lose some of the money,"
-                                     "Or let the feds watch as you take the money."
-                                     "Type 1 to turn off cameras, or 2 to let them watch")
+                                     "Turn the cameras off and lose some of the money, "
+                                     "Or let the feds watch as you take the money. "
+                                     "Type 1 to turn off cameras, or 2 to let them watch. ")
     
     if (choice == 1):
         messagebox.showinfo("HOUSTON",
-                            "You take control of the cameras."+ \
-                            "you are now the only one able to see what goes on inside.")
+                            "You take control of the cameras. "+ \
+                            "you are now the only one able to see what goes on inside. ")
         choice31()
                             
 
     elif (choice == 2):
         messagebox.showinfo("HOUSTON",
-                            "Your choice may prove unwise but all you can think of is money.")
+                            "Your choice may prove unwise but all you can think of is money. ")
         choice37()
     else:
         choice3()
